@@ -20,9 +20,10 @@ body {
   font-weight: 500;
 }
 
-.something {
-  display: flex;
-  justify-content: space-between;
+.itemHeader {
+  display: grid;
+  grid-template-columns: 25px 1fr 12px 8px 20px;
+  align-items: center;
 }
 
 .expenseContainer {
@@ -39,7 +40,20 @@ body {
   background-color: #eae9fb;
 }
 
-.green {
-  background-color: rgb(34, 197, 94);
+.inactiveBar {
+  background-color: #abaab0;
   border: 1px solid #eae9fb;
+  border-radius: 4px;
+}
+
+.incomeBar {
+  background-color: #59ce8f;
+  border: 1px solid #eae9fb;
+  border-radius: 4px;
+}
+
+.expenseBar {
+  background-color: #b31312;
+  border: 1px solid #eae9fb;
+  border-radius: 4px;
 }
