@@ -5,7 +5,7 @@ body {
   font-size: 15px;
 }
 
-.yearCard {
+.container {
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -15,22 +15,23 @@ body {
   border-radius: 10px;
 }
 
-.cardHeader {
+.container > * {
+  display: grid;
+  gap: 10px;
+}
+
+.font-header {
   font-size: 18px;
   font-weight: 500;
 }
 
-.itemHeader {
+.monthlySummaryValues {
   display: grid;
   grid-template-columns: 25px 1fr 12px 8px 20px;
   align-items: center;
 }
 
-.expenseContainer {
-  display: grid;
-  gap: 10px;
-}
-.bar {
+.monthlySummaryBar {
   height: 10px;
   border: 1px solid none;
   border-radius: 5px;
@@ -56,4 +57,9 @@ body {
   background-color: #b31312;
   border: 1px solid #eae9fb;
   border-radius: 4px;
+}
+
+.monthlyInputContainer {
+  display: grid;
+  grid-template-columns: 50px 50px 1fr 1fr;
 }
