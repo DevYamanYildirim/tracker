@@ -1,23 +1,33 @@
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
+  font-style: normal;
   margin: 0px;
+
   font-size: 15px;
+  background-color: #f6f4eb;
 }
 
 .container {
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  border: 1px solid gray;
   margin: 10px;
-  padding: 10px;
+  padding: 15px;
   border-radius: 10px;
+  box-shadow: rgba(145, 158, 171, 0.3) 0px 0px 2px 0px,
+    rgba(145, 158, 171, 0.12) 0px 12px 24px -4px;
+  background-color: #ffffff;
 }
 
-.font-header {
+.container > div {
+  height: 40px;
+}
+
+.font-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   font-size: 18px;
-  font-weight: 500;
 }
 
 .monthlySummaryValues {
@@ -50,20 +60,32 @@ body {
 }
 
 .expenseBar {
-  background-color: #b31312;
+  background-color: #f37878;
   border: 1px solid #eae9fb;
   border-radius: 4px;
 }
 
 .monthlyInputContainer {
   display: grid;
-  grid-template-columns: 50px 50px 1fr 70px 20px;
-  gap: 5px;
+  grid-template-columns: 25px 100px 1fr 100px;
+  align-items: center;
   border-width: 0 0 1px 0;
   border-color: black;
   border-style: solid;
 }
 
+.amount {
+  display: grid;
+  grid-template-columns: 1fr 20px;
+  align-items: center;
+  text-align: right;
+  gap: 5px;
+}
+
 .textAlign-right {
   text-align: right;
+}
+
+.textAlign-center {
+  text-align: center;
 }
